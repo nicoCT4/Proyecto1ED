@@ -11,3 +11,10 @@
     )
 )
 (print (fibonacci 10)) ; Resultado 55
+
+(defun factorial (n)
+    (if (= n 0)
+        1
+        (* n (factorial (- n 1)))))
+
+(print (factorial 5)) ; Resultado 120
